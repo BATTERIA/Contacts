@@ -10,4 +10,6 @@
 
     <color name="avatar_indicator">#98BCC0</color>
     <color name="detail_first_name">#FFFFFF</color>
+    <color name="toolbar_background">#292929</color>
+    <color name="toolbar_title">#FFFFFF</color>
 </resources>

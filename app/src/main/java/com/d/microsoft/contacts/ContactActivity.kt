@@ -2,6 +2,7 @@ package com.d.microsoft.contacts
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.widget.Toolbar
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewpager2.widget.ViewPager2
 import com.d.microsoft.R
@@ -70,6 +71,9 @@ class ContactActivity : AppCompatActivity(), Logger {
                 AvatarTagLayoutMediator(it, pager).attach()
             }
         }
+
+        val toolbar = findViewById<Toolbar>(R.id.toolbar)
+        setSupportActionBar(toolbar)
     }
 
     private fun initViewModel() {
