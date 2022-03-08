@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Contacts</string>
+    <string name="iv_avatar_description">ImageView for avator</string>
+    <string name="detail_about_me">About me</string>
+</resources>
