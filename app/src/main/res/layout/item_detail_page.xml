@@ -39,7 +39,7 @@
         android:textSize="18sp"
         android:textStyle="bold" />
 
-    <com.d.microsoft.contacts.ui.pager.InformationScrollView
+    <com.d.microsoft.contacts.view.pager.InformationScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="10dp">
@@ -52,5 +52,5 @@
             android:paddingVertical="3dp"
             android:textSize="16sp"
             tools:text="introduction" />
-    </com.d.microsoft.contacts.ui.pager.InformationScrollView>
+    </com.d.microsoft.contacts.view.pager.InformationScrollView>
 </LinearLayout>

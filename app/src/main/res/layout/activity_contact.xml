@@ -16,7 +16,7 @@
         app:title="@string/app_name"
         app:titleTextColor="@color/toolbar_title" />
 
-    <com.d.microsoft.contacts.ui.tab.AvatarTagLayout
+    <com.d.microsoft.contacts.view.tab.AvatarTagLayout
         android:id="@+id/rv_avatar"
         android:layout_width="match_parent"
         android:layout_height="100dp" />

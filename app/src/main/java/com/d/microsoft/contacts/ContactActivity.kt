@@ -8,10 +8,11 @@ import androidx.viewpager2.widget.ViewPager2
 import com.d.microsoft.R
 import com.d.microsoft.base.utils.Logger
 import com.d.microsoft.base.utils.logInfo
-import com.d.microsoft.contacts.ui.pager.DetailPageAdapter
-import com.d.microsoft.contacts.ui.tab.AvatarTagAdapter
-import com.d.microsoft.contacts.ui.tab.AvatarTagLayout
-import com.d.microsoft.contacts.ui.tab.AvatarTagLayoutMediator
+import com.d.microsoft.contacts.view.pager.DetailPageAdapter
+import com.d.microsoft.contacts.view.tab.AvatarTagAdapter
+import com.d.microsoft.contacts.view.tab.AvatarTagLayout
+import com.d.microsoft.contacts.view.tab.AvatarTagLayoutMediator
+import com.d.microsoft.contacts.viewmodel.ContactViewModel
 
 /**
  * @author: yaobeihaoyu

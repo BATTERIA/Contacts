@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<com.d.microsoft.contacts.ui.tab.AvatarView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.d.microsoft.contacts.view.tab.AvatarView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/iv_avatar"
     android:layout_width="match_parent"
