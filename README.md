@@ -25,25 +25,16 @@ I designed three-level cache of both ImageLoader and ContactCache for further ex
 ## Screen Record<br/>
 
 ### Android 10.0<br/>
-![Android10](https://github.com/BATTERIA/Contacts/blob/44b04c17400bbc524bdf145e2a928032216d280d/screenrecord/Android10.gif)
+<img src="https://github.com/BATTERIA/Contacts/blob/44b04c17400bbc524bdf145e2a928032216d280d/screenrecord/Android10.gif" width="270" height="600" alt="Android10"/>
 
 ### Android 8.0<br/>
-![android8](https://github.com/BATTERIA/Contacts/blob/44b04c17400bbc524bdf145e2a928032216d280d/screenrecord/android8.gif)
+<img src="https://github.com/BATTERIA/Contacts/blob/44b04c17400bbc524bdf145e2a928032216d280d/screenrecord/android8.gif" width="270" height="480" alt="android8"/>
 
 ### Android 5.0<br/>
-![android5](https://github.com/BATTERIA/Contacts/blob/44b04c17400bbc524bdf145e2a928032216d280d/screenrecord/android5.gif)
+<img src="https://github.com/BATTERIA/Contacts/blob/44b04c17400bbc524bdf145e2a928032216d280d/screenrecord/android5.gif" width="270" height="480" alt="android5"/>
 
 ### Dark Mode<br/>
-![dark-mode](https://github.com/BATTERIA/Contacts/blob/44b04c17400bbc524bdf145e2a928032216d280d/screenrecord/Android10dark.gif)
+<img src="https://github.com/BATTERIA/Contacts/blob/44b04c17400bbc524bdf145e2a928032216d280d/screenrecord/Android10dark.gif" width="270" height="600" alt="dark-mode"/>
 
 ### Rotate the Screen<br/>
-![Android10-Horizontal](https://github.com/BATTERIA/Contacts/blob/44b04c17400bbc524bdf145e2a928032216d280d/screenrecord/Android10-Horizontal.gif)
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/BATTERIA/Contacts/blob/44b04c17400bbc524bdf145e2a928032216d280d/screenrecord/Android10-Horizontal.gif" width="270" height="600" alt="Android10-Horizontal"/>
