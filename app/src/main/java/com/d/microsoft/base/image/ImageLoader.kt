@@ -16,7 +16,9 @@ import kotlinx.coroutines.*
  * support get image from asset
  */
 class ImageLoader : IImageLoader, Logger {
+    // CacheManager for bitmap
     private val cacheManager: BitmapCacheManager = BitmapCacheManager()
+    // custom CoroutineScope with CoroutineExceptionHandler
     private val coroutineScope: CoroutineScope =
         CoroutineScope(SupervisorJob() + Dispatchers.Main + CoroutineExceptionHandler { _, t ->
             logError { "Coroutine error msg: ${t.message}" }
