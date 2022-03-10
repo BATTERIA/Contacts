@@ -2,8 +2,8 @@ package com.d.microsoft.base.image.cache
 
 import android.graphics.Bitmap
 import com.d.microsoft.base.utils.ResourceUtils
-import com.d.microsoft.base.image.AssetImageRequest
-import com.d.microsoft.base.image.ImageRequest
+import com.d.microsoft.base.image.request.AssetImageRequest
+import com.d.microsoft.base.image.request.ImageRequest
 
 /**
  * @author: yaobeihaoyu
@@ -14,7 +14,7 @@ import com.d.microsoft.base.image.ImageRequest
  */
 class BitmapCacheManager {
     private val memoryCache: IBitmapCache = BitmapMemoryCache()
-    private val diskContact: IBitmapCache = BitmapDiskCache()
+    private val diskCache: IBitmapCache = BitmapDiskCache()
 
     fun get(request: ImageRequest): Bitmap? {
         val key = request.generateKey()

@@ -10,7 +10,7 @@ import com.d.microsoft.contacts.model.bean.Contact
  */
 class ContactCacheManager: IContactCache {
     private val memoryCache: IContactCache = ContactMemoryCache()
-    private val diskContact: IContactCache = ContactDiskCache()
+    private val diskCache: IContactCache = ContactDiskCache()
 
     override fun get(): List<Contact> {
         // first find from memory
@@ -19,7 +19,7 @@ class ContactCacheManager: IContactCache {
             return listFromMemory
         }
         // second find from disk
-        val listFromDisk = diskContact.get()
+        val listFromDisk = diskCache.get()
         if (listFromDisk.isNotEmpty()) {
             memoryCache.put(listFromDisk)
             return listFromDisk

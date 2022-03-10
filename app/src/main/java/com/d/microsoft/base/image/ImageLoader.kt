@@ -4,6 +4,7 @@ import android.graphics.Bitmap
 import com.d.microsoft.base.utils.Logger
 import com.d.microsoft.base.utils.logError
 import com.d.microsoft.base.image.cache.BitmapCacheManager
+import com.d.microsoft.base.image.request.ImageRequest
 import kotlinx.coroutines.*
 
 /**

@@ -19,8 +19,9 @@ class InformationScrollView @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null
 ) : ScrollView(context, attrs) {
     // the start Y of each motion
-    var startY: Float = 0f
+    private var startY: Float = 0f
 
+    // no need for listening click event
     @SuppressLint("ClickableViewAccessibility")
     override fun onTouchEvent(ev: MotionEvent?): Boolean {
         ev ?: return super.onTouchEvent(ev)

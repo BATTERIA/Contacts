@@ -1,4 +1,4 @@
-package com.d.microsoft.base.image
+package com.d.microsoft.base.image.request
 
 /**
  * @author: yaobeihaoyu

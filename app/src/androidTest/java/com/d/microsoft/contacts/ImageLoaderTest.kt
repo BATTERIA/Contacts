@@ -1,6 +1,6 @@
 package com.d.microsoft.contacts
 
-import com.d.microsoft.base.image.AssetImageRequest
+import com.d.microsoft.base.image.request.AssetImageRequest
 import com.d.microsoft.base.image.IImageLoader
 import com.d.microsoft.base.image.ImageLoader
 import junit.framework.TestCase

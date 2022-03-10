@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.d.microsoft.R
 import com.d.microsoft.contacts.model.bean.Contact
-import com.d.microsoft.base.image.AssetImageRequest
+import com.d.microsoft.base.image.request.AssetImageRequest
 import com.d.microsoft.base.image.IImageLoader
 import com.d.microsoft.base.image.ImageLoader
 import com.google.android.material.imageview.ShapeableImageView

@@ -24,9 +24,9 @@ class ContactActivity : AppCompatActivity(), Logger {
     // ViewModel
     private var contactViewModel: ContactViewModel? = null
     // ViewPager2 for detail view
-    private var viewPager: ViewPager2? = null
+    private var detailViewPager: ViewPager2? = null
     // custom RecyclerView for avatar view
-    private var tagLayout: AvatarTagLayout? = null
+    private var avatarTagLayout: AvatarTagLayout? = null
     // adapter for detail ViewPager2
     private var detailPageAdapter: DetailPageAdapter? = null
     // adapter for AvatarTagLayout
@@ -48,30 +48,26 @@ class ContactActivity : AppCompatActivity(), Logger {
     }
 
     private fun initViews() {
-        viewPager = findViewById(R.id.vp_detail)
-        tagLayout = findViewById(R.id.rv_avatar)
+        val viewPager = findViewById<ViewPager2>(R.id.vp_detail)
+        val tagLayout = findViewById<AvatarTagLayout>(R.id.rv_avatar)
+        detailViewPager = viewPager
+        avatarTagLayout = tagLayout
 
-        DetailPageAdapter().let {
-            detailPageAdapter = it
-            viewPager?.adapter = it
-        }
+        val pageAdapter = DetailPageAdapter()
+        detailPageAdapter = pageAdapter
+        viewPager.adapter = pageAdapter
 
-        AvatarTagAdapter { position ->
+        val tagAdapter = AvatarTagAdapter { position ->
             // callback when avatar tag is clicked
             logInfo { "avatar tag(position: $position) is clicked" }
-            viewPager?.setCurrentItem(position, true)
-            tagLayout?.scrollToTab(position)
-        }.let {
-            avatarTagAdapter = it
-            tagLayout?.adapter = it
+            detailViewPager?.setCurrentItem(position, true)
+            avatarTagLayout?.scrollToTab(position)
         }
+        avatarTagAdapter = tagAdapter
+        avatarTagLayout?.adapter = tagAdapter
 
-        viewPager?.let { pager ->
-            tagLayout?.let {
-                // mediator between AvatarTagLayout and detail ViewPager2
-                AvatarTagLayoutMediator(it, pager).attach()
-            }
-        }
+        // mediator between AvatarTagLayout and detail ViewPager2
+        AvatarTagLayoutMediator(tagLayout, viewPager).attach()
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)

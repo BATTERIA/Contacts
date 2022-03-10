@@ -50,11 +50,11 @@ class ContactDecoder : IContactDecoder, Logger {
     override fun jsonToContact(jsonObject: JSONObject): Contact? {
         return try {
             // this analysis is not great, we can use Gson or FastJson instead
-            val firstName = jsonObject.getString("first_name")
-            val lastName = jsonObject.getString("last_name")
-            val avatarFileName = jsonObject.getString("avatar_filename")
-            val title = jsonObject.getString("title")
-            val introduction = jsonObject.getString("introduction")
+            val firstName = jsonObject.optString(FIRST_NAME, "")
+            val lastName = jsonObject.optString(LAST_NAME, "")
+            val avatarFileName = jsonObject.optString(AVATAR_FILENAME, "")
+            val title = jsonObject.optString(TITLE, "")
+            val introduction = jsonObject.optString(INTRODUCTION, "")
             Contact(firstName, lastName, avatarFileName, title, introduction)
         } catch (e: Exception) {
             logError { "jsonToContacts error msg: ${e.message}" }
@@ -67,5 +67,11 @@ class ContactDecoder : IContactDecoder, Logger {
 
     companion object {
         private const val TAG = "ContactDecoder"
+
+        private const val FIRST_NAME = "first_name"
+        private const val LAST_NAME = "last_name"
+        private const val AVATAR_FILENAME = "avatar_filename"
+        private const val TITLE = "title"
+        private const val INTRODUCTION = "introduction"
     }
 }

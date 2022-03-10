@@ -16,8 +16,12 @@ import com.google.android.material.imageview.ShapeableImageView
 class AvatarView @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null
 ) : ShapeableImageView(context, attrs) {
+    private val indicatorWidth: Float by lazy {
+        SizeUtils.dp2px(INDICATOR_WIDTH).toFloat()
+    }
+
     override fun onDraw(canvas: Canvas?) {
-        strokeWidth = if (isSelected) SizeUtils.dp2px(INDICATOR_WIDTH).toFloat() else 0f
+        strokeWidth = if (isSelected) indicatorWidth else 0f
         super.onDraw(canvas)
     }
 

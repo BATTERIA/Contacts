@@ -1,6 +1,7 @@
 package com.d.microsoft.base.image
 
 import android.graphics.Bitmap
+import com.d.microsoft.base.image.request.ImageRequest
 
 /**
  * @author: yaobeihaoyu

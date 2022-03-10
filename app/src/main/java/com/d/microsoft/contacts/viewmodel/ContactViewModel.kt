@@ -16,11 +16,13 @@ import kotlinx.coroutines.withContext
  * @author: yaobeihaoyu
  * @version: 1.0
  * @since: 2022/3/5
- * @description:
+ * @description: ContactViewModel
  */
 class ContactViewModel : ViewModel(), Logger {
+    // LiveData of Contacts
     val contacts = MutableLiveData<List<Contact>>()
 
+    // Contact three-level cache
     private val contactCacheManager: IContactCache = ContactCacheManager()
 
     fun getContactData() {
